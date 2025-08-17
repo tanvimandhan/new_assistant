@@ -51,7 +51,7 @@ export class ResultDisplay {
   createResponseSection(data, selectedLanguage) {
     return `
       <div class="result-card">
-        <h3>AI Response</h3>
+        <h3>Tutor's Response</h3>
         <p><strong>${getLanguageName(selectedLanguage)}:</strong> ${data.response}</p>
         <p class="translation"><strong>English:</strong> ${data.translation_response}</p>
       </div>
@@ -74,7 +74,7 @@ export class ResultDisplay {
 
     return `
       <div class="vocabulary-section">
-        <h3>📚 Vocabulary Words to Review</h3>
+        <h3> Vocabulary Words to Review</h3>
         ${vocabCards}
       </div>
     `;

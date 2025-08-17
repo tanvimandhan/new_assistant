@@ -312,10 +312,10 @@
     border-radius: 16px;
     box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
     padding: 40px;
-    max-width: 400px;
+    max-width: 500px;
     width: 100%;
     margin: 0 auto;
-    margin-top: 50px;
+    margin-top: 0;
 }
 
 .auth-header {
@@ -324,14 +324,14 @@
 }
 
 .auth-header h1 {
-    color: #2c3e50;
+    color: #334155;
     font-size: 28px;
     font-weight: 700;
     margin-bottom: 8px;
 }
 
 .auth-header p {
-    color: #7f8c8d;
+    color: #94a3b8;
     font-size: 16px;
     line-height: 1.5;
 }
@@ -346,7 +346,7 @@
 
 .form-group label {
     display: block;
-    color: #2c3e50;
+    color: #334155;
     font-weight: 600;
     margin-bottom: 8px;
     font-size: 14px;
@@ -356,7 +356,7 @@
 .form-group select {
     width: 100%;
     padding: 12px 16px;
-    border: 2px solid #e1e8ed;
+    border: 2px solid #e2e8f0;
     border-radius: 8px;
     font-size: 16px;
     transition: all 0.3s ease;
@@ -366,13 +366,13 @@
 .form-group input:focus,
 .form-group select:focus {
     outline: none;
-    border-color: #3498db;
-    box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.1);
+    border-color: #475569;
+    box-shadow: 0 0 0 3px rgba(71, 85, 105, 0.1);
 }
 
 .form-group input:hover,
 .form-group select:hover {
-    border-color: #bdc3c7;
+    border-color: #cbd5e1;
 }
 
 .auth-btn {
@@ -388,14 +388,14 @@
 }
 
 .auth-btn.primary {
-    background: linear-gradient(135deg, #3498db, #2980b9);
+    background: linear-gradient(135deg, #475569, #334155);
     color: white;
 }
 
 .auth-btn.primary:hover {
-    background: linear-gradient(135deg, #2980b9, #1f5f8b);
+    background: linear-gradient(135deg, #334155, #1e293b);
     transform: translateY(-2px);
-    box-shadow: 0 8px 25px rgba(52, 152, 219, 0.3);
+    box-shadow: 0 8px 25px rgba(71, 85, 105, 0.3);
 }
 
 .auth-btn:disabled {
@@ -437,28 +437,33 @@
 
 .auth-footer p {
     margin: 8px 0;
-    color: #7f8c8d;
+    color: #94a3b8;
     font-size: 14px;
 }
 
 .auth-footer a {
-    color: #3498db;
+    color: #475569;
     text-decoration: none;
     font-weight: 600;
     transition: color 0.3s ease;
 }
 
 .auth-footer a:hover {
-    color: #2980b9;
+    color: #334155;
     text-decoration: underline;
 }
 
 /* Responsive Design */
 @media (max-width: 480px) {
     .auth-card {
-        margin: 20px;
+        margin: 0;
         padding: 24px;
-        margin-top: 20px;
+        border-radius: 0;
+        max-width: 100%;
+    }
+    
+    .auth-forms-container {
+        padding: 20px;
     }
     
     .auth-header h1 {
@@ -504,29 +509,29 @@
 /* Form Validation Styles */
 .form-group input:invalid:not(:placeholder-shown),
 .form-group select:invalid:not(:placeholder-shown) {
-    border-color: #e74c3c;
+    border-color: #dc2626;
 }
 
 .form-group input:valid:not(:placeholder-shown),
 .form-group select:valid:not(:placeholder-shown) {
-    border-color: #27ae60;
+    border-color: #059669;
 }
 
 /* Focus States for Accessibility */
 .auth-btn:focus {
-    outline: 2px solid #3498db;
+    outline: 2px solid #475569;
     outline-offset: 2px;
 }
 
 .form-group input:focus,
 .form-group select:focus {
-    outline: 2px solid #3498db;
+    outline: 2px solid #475569;
     outline-offset: 2px;
 }
 
 /* Authentication Header Bar */
 .auth-header-bar {
-    background: linear-gradient(135deg, #3498db, #2980b9);
+    background: linear-gradient(135deg, #475569, #334155);
     color: white;
     padding: 16px 24px;
     display: flex;
@@ -572,7 +577,8 @@
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    padding: 20px;
+    padding: 40px;
+    width: 100%;
 }
 
 /* Tab Styling */
@@ -597,12 +603,12 @@
 }
 
 .auth-tab.active {
-    background: #3498db;
+    background: #475569;
     color: white;
 }
 
 .auth-tab:hover:not(.active) {
-    background: #e9ecef;
+    background: #e2e8f0;
 }
 
 /* Success Message Positioning */
@@ -620,10 +626,11 @@
     margin-top: 30px;
     padding-top: 30px;
     border-top: 2px solid #e1e8ed;
+    width: 100%;
 }
 
 .user-progress-section h2 {
-    color: #2c3e50;
+    color: #334155;
     font-size: 24px;
     font-weight: 700;
     margin-bottom: 20px;
@@ -648,14 +655,14 @@
 }
 
 .progress-header h3 {
-    color: #2c3e50;
+    color: #334155;
     font-size: 18px;
     font-weight: 600;
     margin: 0;
 }
 
 .toggle-btn {
-    background: #3498db;
+    background: #475569;
     color: white;
     border: none;
     padding: 8px 16px;
@@ -667,7 +674,7 @@
 }
 
 .toggle-btn:hover {
-    background: #2980b9;
+    background: #334155;
     transform: translateY(-1px);
 }
 
@@ -698,7 +705,7 @@
 }
 
 .session-language {
-    background: #3498db;
+    background: #475569;
     color: white;
     padding: 4px 8px;
     border-radius: 12px;
@@ -708,12 +715,12 @@
 }
 
 .session-date {
-    color: #7f8c8d;
+    color: #94a3b8;
     font-size: 12px;
 }
 
 .session-content {
-    color: #2c3e50;
+    color: #334155;
 }
 
 .session-text {
@@ -748,7 +755,7 @@
 }
 
 .vocab-word strong {
-    color: #2c3e50;
+    color: #334155;
     font-size: 16px;
 }
 
@@ -761,47 +768,47 @@
 }
 
 .difficulty-beginner {
-    background: #e8f5e8;
-    color: #27ae60;
+    background: #f0fdf4;
+    color: #166534;
 }
 
 .difficulty-intermediate {
-    background: #fff3cd;
-    color: #856404;
+    background: #fefce8;
+    color: #92400e;
 }
 
 .difficulty-advanced {
-    background: #f8d7da;
-    color: #721c24;
+    background: #fef2f2;
+    color: #991b1b;
 }
 
 .vocab-translation {
-    color: #7f8c8d;
+    color: #94a3b8;
     margin-bottom: 6px;
     font-style: italic;
 }
 
 .vocab-example {
-    color: #2c3e50;
+    color: #334155;
     font-size: 14px;
     margin-bottom: 8px;
 }
 
 .vocab-stats {
-    color: #7f8c8d;
+    color: #94a3b8;
     font-size: 12px;
 }
 
 /* Loading and Empty States */
 .loading {
     text-align: center;
-    color: #7f8c8d;
+    color: #94a3b8;
     padding: 20px;
 }
 
 .empty-state {
     text-align: center;
-    color: #7f8c8d;
+    color: #94a3b8;
     padding: 40px 20px;
 }
 
@@ -840,3 +847,38 @@
     }
 }
 
+/* Speaker Controls */
+.speaker-controls {
+    text-align: center;
+    margin: 20px 0;
+    padding: 15px;
+    background: #f8fafc;
+    border-radius: 8px;
+    border: 1px solid #e2e8f0;
+}
+
+.stop-speaker-btn {
+    background: #e74c3c;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin: 0 auto;
+}
+
+.stop-speaker-btn:hover {
+    background: #c0392b;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(231, 76, 60, 0.3);
+}
+
+.stop-speaker-btn:active {
+    transform: translateY(0);
+}

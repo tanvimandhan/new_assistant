@@ -7,22 +7,26 @@
 
 body {
   font-family: Arial, sans-serif;
-  background-color: #f5f5f5;
+  background-color: #fafbfc;
   min-height: 100vh;
   line-height: 1.6;
 }
 
 .container {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 20px;
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
 }
 
 .card {
   background: white;
-  padding: 30px;
-  border-radius: 10px;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  padding: 40px;
+  border-radius: 0;
+  box-shadow: none;
+  min-height: 100vh;
+  width: 100%;
 }
 
 h1 {
@@ -63,12 +67,12 @@ select {
 
 select:focus {
   outline: none;
-  border-color: #007bff;
-  box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.25);
+  border-color: #475569;
+  box-shadow: 0 0 0 2px rgba(71, 85, 105, 0.25);
 }
 
 .btn-mic {
-  background: #007bff;
+  background: #475569;
   color: white;
   border: none;
   cursor: pointer;
@@ -80,12 +84,12 @@ select:focus {
 }
 
 .btn-mic:hover {
-  background: #0056b3;
+  background: #334155;
   transform: scale(1.05);
 }
 
 .btn-mic.recording {
-  background: #dc3545;
+  background: #dc2626;
   animation: pulse 1s infinite;
 }
 
@@ -109,11 +113,12 @@ select:focus {
 }
 
 .result-card {
-  background: #f8f9fa;
+  background: #f8fafc;
   padding: 15px;
   margin: 10px 0;
-  border-radius: 5px;
-  border-left: 4px solid #007bff;
+  border-radius: 8px;
+  border-left: 4px solid #64748b;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
 }
 
 .result-card h3 {
@@ -140,13 +145,13 @@ select:focus {
 /* Loading */
 .loading {
   text-align: center;
-  color: #007bff;
+  color: #475569;
   padding: 20px;
 }
 
 .loading .spinner {
-  border: 2px solid #f3f3f3;
-  border-top: 2px solid #007bff;
+  border: 2px solid #e2e8f0;
+  border-top: 2px solid #475569;
   border-radius: 50%;
   width: 32px;
   height: 32px;
@@ -161,13 +166,14 @@ select:focus {
 
 /* Fluency score */
 .fluency-score {
-  background: linear-gradient(135deg, #28a745, #20c997);
+  background: linear-gradient(135deg, #059669, #10b981);
   color: white;
   padding: 15px;
-  border-radius: 20px;
+  border-radius: 12px;
   text-align: center;
   font-weight: bold;
   margin: 10px 0;
+  box-shadow: 0 2px 8px rgba(5, 150, 105, 0.2);
 }
 
 .fluency-score h3 {
@@ -182,11 +188,12 @@ select:focus {
 
 /* Vocabulary section */
 .vocabulary-section {
-  background: #e3f2fd;
+  background: #f8fafc;
   padding: 15px;
   margin: 10px 0;
-  border-radius: 5px;
-  border-left: 4px solid #2196f3;
+  border-radius: 8px;
+  border-left: 4px solid #64748b;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
 }
 
 .vocabulary-section h3 {
@@ -200,8 +207,9 @@ select:focus {
   background: white;
   padding: 10px;
   margin: 8px 0;
-  border-radius: 5px;
-  border: 1px solid #ddd;
+  border-radius: 8px;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
 }
 
 .vocab-word .word-header {
@@ -225,18 +233,18 @@ select:focus {
 }
 
 .difficulty-beginner {
-  background: #d4edda;
-  color: #155724;
+  background: #f0fdf4;
+  color: #166534;
 }
 
 .difficulty-intermediate {
-  background: #fff3cd;
-  color: #856404;
+  background: #fefce8;
+  color: #92400e;
 }
 
 .difficulty-advanced {
-  background: #f8d7da;
-  color: #721c24;
+  background: #fef2f2;
+  color: #991b1b;
 }
 
 .vocab-word p {
@@ -251,12 +259,13 @@ select:focus {
 
 /* Error messages */
 .error {
-  background: #f8d7da;
-  border: 1px solid #f5c6cb;
-  color: #721c24;
+  background: #fef2f2;
+  border: 1px solid #fecaca;
+  color: #991b1b;
   padding: 15px;
-  border-radius: 5px;
+  border-radius: 8px;
   margin: 10px 0;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
 }
 
 .error p {
@@ -271,7 +280,7 @@ select:focus {
 /* Responsive design */
 @media (max-width: 768px) {
   .container {
-    padding: 10px;
+    padding: 0;
   }
   
   .card {
